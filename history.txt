@@ -147,3 +147,63 @@ ls
   143  git push
   144  git log -p --all > git_log.txt
   145  history > history.txt
+  146  ls
+  147  rm -r dest
+  148  gulp
+  149  $ git checkout -b
+  150  git checkout -b
+  151  $ git checkout -b colour-change
+  152  git checkout -b colour-change
+  153  ls
+  154  cd src
+  155  ls
+  156  cd css
+  157  code new.css
+  158  git add .
+  159  git status
+  160  git restore --staged new.css
+  161  cd ..
+  162  cd ..
+  163  git add .
+  164  git status
+  165  git commit -m 'Added a new new.css file and changed the concat order in the styles task'
+  166  git branch
+  167  code src/index.html
+  168  gulp
+  169  git switch main
+  170  git branch
+  171  git switch colour-change
+  172  git add .
+  173  git status
+  174  git commit -m 'Created a new branch and added new css features'
+  175  git push
+  176  git switch main
+  177  git switch new-feature
+  178  git checkout -b new-feature
+  179  code src/js/app.js
+  180  code src/js/new.js
+  181  code src/js/app.js
+  182  gulp
+  183  gulp
+  184  git add .
+  185  git status
+  186  git commit -m 'Added a confetti canon script when an item gets added to the cart'
+  187  git switch main
+  188  git merge colour-change
+  189  git merge new-feature
+  190  code src/index.html
+  191  code dest/index.html
+  192  git commit -m Added a confetti canon script when an item gets added to the cart'
+
+  193  git commit -m 'Added a confetti canon script when an item gets added to the cart'
+  194  git add .
+  195  git status
+  196  git commit
+  197  git branch
+  198  git branch --no-merged
+  199  git push
+  200  git branch --merged
+  201  git branch -d colour-change
+  202  git branch -d new-feature
+  203  history > history.txt
+  204  history > history2.txt
