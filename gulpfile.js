@@ -13,19 +13,19 @@ gulp.task('move', function () {
 
 gulp.task('styles', function () {
   return gulp.src('src/css/*.css')
-    .pipe(sourcemaps.init())
     .pipe(concatCss('style.css'))
+    .pipe(sourcemaps.init())
     .pipe(csso())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dest/css/'));
 });
 
 gulp.task('js', function () {
   return gulp.src('src/js/*.js')
-    .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
+    .pipe(sourcemaps.init())
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dest/js/'));
 });
 
@@ -34,5 +34,7 @@ gulp.task('images', function () {
   .pipe(imagemin())
   .pipe(gulp.dest('dest/images/'))
 });
+
+// gulp.task('default', parallel())
 
 // exports.build = series(javascript, css);
