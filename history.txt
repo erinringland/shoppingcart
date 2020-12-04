@@ -1,0 +1,149 @@
+    1  git init
+    2  git add .
+    3  git commit -m 'Initializing Files'
+    4  touch .gitignore
+    5  git add .gitignore
+    6  git commit -m 'Added .gitignore'
+    7  git remote add origin https://github.com/erinringland/shoppingcart.git
+    8  git branch -M main
+    9  git push -u origin main
+   10  npm install -D gulp
+   11  git checkout --npm install -D gulp
+   12  npm init
+   13  npm init
+   14  npm install -D gulp
+   15  git add .
+   16  git commit -m 'Added NPM and Gulp'
+   17  ls
+   18  mkdir src
+   19  mv index.html src
+   20  mv images src
+   21  mv css src
+   22  mv js src
+   23  ls
+   24  git add .
+   25  git commit -m 'Added NPM and Gulp. Added a src folder and moved appropriate files.'
+   26  git push
+   27  mv originalindex.html src
+   28  touch gulpfile.js
+   29  git add .
+   30  git commit -m 'Added gulpfile and moved orginalindex.html to src'
+   31  git push
+   32  npm i --save-dev gulp-csso
+   33  ls
+   34  code gulpfile.js
+   35  gulp
+   36  gulp default
+   37  gulp default
+   38  gulp default
+   39  mkdir dest
+   40  gulp default
+   41  gulp default
+   42  cd css
+   43  ls
+   44  cd src/css
+   45  ls
+   46  cd ..
+   47  cd ..
+   48  cd dest
+   49  ls
+   50  rm css
+   51  rm -r css
+   52  gulp
+   53  gulp --tasks
+   54  gulp css-mini
+   55  gulp css-mini
+   56  ls
+   57  viewFiles
+   58  cd css
+   59  viewFiles
+   60  cd ..
+   61  cd ..
+   62  git add .
+   63  git status
+   64  git restore --staged .
+   65  git status
+   66  npm i gulp-concat-css
+   67  npm audit fix
+   68  npm i gulp-concat-sourcemap
+   69  npm audit fix
+   70  npm ls gulp-util
+   71  gulp --tasks
+   72  npm i --save-dev gulp-concat-css
+   73  npm i --save-dev gulp-group-concat
+   74  code package.json
+   75  npm i --save-dev gulp-group-concat
+   76  npm audit fix
+   77  gulp --tasks
+   78  gulp css-mini
+   79  gulp css-mini
+   80  gulp css-mini
+   81  ls
+   82  cd dest
+   83  rm -r css
+   84  ls
+   85  cd ..
+   86  gulp styles
+   87  npm i --save-dev gulp-sourcemaps
+   88  gulp styles
+   89  git add .
+   90  git status
+   91  git commit -m 'Added a task for styles'
+   92  git push
+   93  npm install --save-dev gulp-babel@7 babel-core babel-preset-env
+   94  npm i --save-dev uglyfly-js
+   95  sudo npm install --save-dev gulp-concat
+   96  gulp js
+   97  gulp js
+   98  gulp js
+   99  npm uninstall gulp-babel
+  100  npm uninstall uglyfly-js
+  101  npm install --save-dev gulp-uglify-es
+  102  gulp js
+  103  npm install --save-dev gulp-image
+  104  git add .
+  105  git commit -m 'Added a Task for JS files'
+  106  git push
+  107  gulp image
+  108  gulp image
+  109  npm uninstall gulp-image
+  110  npm i --save-dev imagemin
+  111  gulp image
+  112  gulp imagemin
+  113  gulp --tasks
+  114  gulp images
+  115  gulp images
+  116  npm uninstall imagemin
+  117  npm install --save-dev gulp-imagemin
+  118  gulp images
+  119  gulp move
+  120  gulp move
+  121  gulp move
+  122  gulp move
+  123  gulp move
+  124  git add .
+  125  git commit -m 'Added Tasks for images and moving .html files'
+  126  git pish
+  127  git push
+  128  git add .
+  129  git commit -m changed the order of the piping in the styles and js tasks and changed output of sourcemaps'
+git commit -m 'changed the order of the piping in the styles and js tasks and changed output of sourcemaps'
+
+s
+ls
+  130  git commit -m 'changed the order of the piping in the styles and js tasks and changed output of sourcemaps'
+  131  git push
+  132  code gulpfile.js
+  133  code package.json
+  134  ls
+  135  rm -r dest
+  136  gulp default
+  137  gulp default
+  138  gulp tasks
+  139  gulp default
+  140  gulp default
+  141  git add .
+  142  git commit -m 'Added a Deafult task to run all tasks at once'
+  143  git push
+  144  git log -p --all > git_log.txt
+  145  history > history.txt

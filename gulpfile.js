@@ -12,7 +12,7 @@ gulp.task('move', function () {
 });
 
 gulp.task('styles', function () {
-  return gulp.src('src/css/*.css')
+  return gulp.src(['src/css/normalize.css', 'src/css/style.css', 'src/css/new.css'])
     .pipe(concatCss('style.css'))
     .pipe(sourcemaps.init())
     .pipe(csso())
@@ -36,5 +36,3 @@ gulp.task('images', function () {
 });
 
 gulp.task('default', gulp.parallel('move', 'styles', 'js', 'images'));
-
-// exports.build = series(javascript, css);
