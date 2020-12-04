@@ -26,14 +26,13 @@ class Cart {
   }
 
   renderList() {
-  
     cartListItems.innerHTML = "";
     this.coursesArr.forEach(function (course) {
       cartListItems.insertAdjacentHTML('afterbegin',
        `<li>
           <img src="images/tools.png">  
             <div id="cart-title">test</div>
-            <div id="cart-price">$money</div>
+            <div id="cart-price">.money}</div>
             <div id="delete">
             <i class="far fa-times-circle"></i>
             </div>
@@ -42,8 +41,6 @@ class Cart {
       
     })
   }
-
-
 
 }
 
@@ -69,7 +66,11 @@ document.addEventListener('click', function (e) {
     // console.log(purchase);
     const infoData = e.target.parentElement.parentElement;
     const finalInfoData = infoData.getAttribute("data-course-id");
-    // console.log(finalInfoData);
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
   }
 })
 
@@ -78,8 +79,4 @@ document.addEventListener('click', function (e) {
     <ul></ul>
     <items>
 */
-
-// window.onload = function () {​​​​​​​
-//   listForm.innerHTML = ``;
-//   }​​​​​​​
-
+const date = document.querySelector('fsyr')
