@@ -35,6 +35,6 @@ gulp.task('images', function () {
   .pipe(gulp.dest('dest/images/'))
 });
 
-// gulp.task('default', parallel())
+gulp.task('default', gulp.parallel('move', 'styles', 'js', 'images'));
 
 // exports.build = series(javascript, css);
