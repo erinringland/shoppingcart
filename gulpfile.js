@@ -8,7 +8,7 @@ const imagemin = require('gulp-imagemin');
 
 gulp.task('move', function () {
   return gulp.src('src/*')
-      .pipe(gulp.dest('dest/'));
+      .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('styles', function () {
@@ -17,7 +17,7 @@ gulp.task('styles', function () {
     .pipe(sourcemaps.init())
     .pipe(csso())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dest/css/'));
+    .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('js', function () {
@@ -26,13 +26,13 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dest/js/'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('images', function () {
   return gulp.src('src/images/*')
   .pipe(imagemin())
-  .pipe(gulp.dest('dest/images/'))
+  .pipe(gulp.dest('dist/images/'))
 });
 
 gulp.task('default', gulp.parallel('move', 'styles', 'js', 'images'));
