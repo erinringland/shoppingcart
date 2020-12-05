@@ -1,0 +1,27 @@
+    1  cd ..
+    2  ls
+    3  ls
+    4  cd Documents/Coding/MITT
+    5  ls
+    6  cd 'Object Oriented Javascript'
+    7  ls
+    8  cd Exercises
+    9  ls
+   10  cd 'Exercise 9'
+   11  ls
+   12  cd opp-group-project
+   13  ls
+   14  viewFiles
+   15  less .gitignore
+   16  git rm -r --cached .
+   17  git add .
+   18  git commit -m "Drop files from .gitignore"
+   19  git push
+   20  ls
+   21  code gulpfile.js
+   22  echo 'dist' >> .gitignore
+   23  less .gitignore
+   24  git add .
+   25  git commit -m 'Changed 'dest' to 'dist''
+   26  git push
+   27  history > history2.txt
